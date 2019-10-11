@@ -22438,6 +22438,10 @@ section.content {
     top:50px !important;
     left: 20px !important;
 }
+.slideDown li a{
+  font-size:12px !important;
+  font-family: "Muli",sans-serif;
+}
 @media only screen and (max-width: 992px) {
   .file_manager .nav-tabs {
     padding-left: 0;
