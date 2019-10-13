@@ -1691,7 +1691,8 @@
 }
 
 .form-group .form-control+.input-group-addon,.input-group .form-control+.input-group-addon {
-  padding: 10px 18px 10px 0;
+  padding: 14px 18px 10px 0;
+  border-left: 0;
 }
 
 .form-group .input-group-addon,.input-group .input-group-addon {
@@ -22464,4 +22465,24 @@ section.content {
     .navbar-brand{
         display: none;
     }
+    .navbar-nav.navbar-right .dropdown-menu{
+      right: -40px !important;
+    }
+    .table-phone-mobile , .table-address-mobile{
+      display: none !important;
+    }
+}
+@media only screen and (max-width: 320px) {
+  .c_list > tbody > tr  > td:last-child {
+    width: 50%;
+    text-align: center;
+
+  }
+  .c_list > tbody > tr  > td:first-child {
+    width: 50%;
+    text-align: center;
+  }
+  .c_list > thead > tr  > th{
+    text-align: center;
+  }
 }
