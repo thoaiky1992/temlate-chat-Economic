@@ -379,14 +379,13 @@
 <!-- Modal -->
 <div id="modalNewGroup" class="modal fade" role="dialog">
   <div class="modal-dialog">
-
     <!-- Modal content-->
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal">&times;</button>
         <h4 class="modal-title">Add New Group</h4>
       </div>
-      <div class="modal-body">
+      <div class="modal-body div-search-user-add-to-group" style="display: none;">
         <div class="input-group search">
             <input type="text" class="form-control" placeholder="Search...">
             <span class="input-group-addon">
@@ -431,9 +430,55 @@
             </table>
         </div>
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-primary" data-dismiss="modal">continue</button>
-      </div>
+      <div class="modal-body div-user-add-to-group">
+            <div class="body table-responsive">
+                <table class="table table-hover m-b-0 c_list">
+                    
+                        <tbody>
+                        <tr>
+                            <td>
+                                <img src="assets/images/xs/avatar1.jpg" class="rounded-circle avatar" alt="">
+                                <p class="c_name">John Smith </p>
+                            </td>
+                            <td class="table-phone-mobile">
+                                <span class="phone"><i class="zmdi zmdi-phone m-r-10"></i>264-625-2583</span>
+                            </td>
+                            <td class="table-address-mobile">
+                                <address><i class="zmdi zmdi-pin"></i>123 6th St. Melbourne, FL 32904</address>
+                            </td>
+                            <td>
+                                <button class="btn btn-default btn-icon btn-simple btn-icon-mini btn-round"><i class="zmdi zmdi-delete"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="assets/images/xs/avatar3.jpg" class="rounded-circle avatar" alt="">
+                                <p class="c_name">Hossein Shams </p>
+                            </td>
+                            <td class="table-phone-mobile">
+                                <span class="phone"><i class="zmdi zmdi-phone m-r-10"></i>264-625-5689</span>
+                            </td>
+                            <td class="table-address-mobile">
+                                <address><i class="zmdi zmdi-pin"></i>44 Shirley Ave. West Chicago, IL 60185</address>
+                            </td>
+                            <td>
+                                <button class="btn btn-default btn-icon btn-simple btn-icon-mini btn-round"><i class="zmdi zmdi-delete"></i></button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div style="padding:10px 0px;">
+                <input type="text" style="height:40px;" class="form-control" placeholder="Tên Nhóm ...">
+            </div>
+        </div>
+        <div class="modal-footer" style="display: none;font-weight: bold;">
+            <button type="button" class="btn btn-primary" data-dismiss="modal">continue</button>
+        </div>
+        <div style="padding:0px 20px 20px 20px;">
+            <button type="button" class="btn btn-success" data-dismiss="modal">Tạo Nhóm</button>
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Huỷ Bỏ</button>
+        </div>
     </div>
 
   </div>
@@ -445,12 +490,14 @@
 <script src="assets/bundles/mainscripts.bundle.js"></script><!-- Custom Js -->
 
 <script>
+$(document).ready(function(){
     $(".list_btn").on('click',function(){
         $("#plist").toggleClass("open");
     });
     $('.btnNewGroup').on('click',function(){
         $('#modalNewGroup').modal('show');
     })
+})
 </script>
 
 </body>
