@@ -18171,7 +18171,7 @@ section.content {
 }
 
 .l-cyan {
-  background: linear-gradient(45deg, #49cdd0, #00bcd4) !important;
+  background: linear-gradient(45deg, #c7dcdc, #00bcd4) !important;
   color: #fff !important;
 }
 
@@ -22471,6 +22471,10 @@ section.content {
     .table-phone-mobile , .table-address-mobile{
       display: none !important;
     }
+    .navbar .navbar-toggler{
+      position: absolute;
+      right: 10px;
+    }
 }
 @media only screen and (max-width: 320px) {
   .c_list > tbody > tr  > td:last-child {
@@ -22484,5 +22488,14 @@ section.content {
   }
   .c_list > thead > tr  > th{
     text-align: center;
+  }
+  .nav-open .sidebar-collapse .navbar-collapse{
+    margin-right: -40px !important;
+  }
+  .navbar .navbar-toggler{
+    right: 10px;
+  }
+  .nav-open .sidebar-collapse .navbar-translate{
+    transform: translate3d(-265px, 0, 0);
   }
 }
