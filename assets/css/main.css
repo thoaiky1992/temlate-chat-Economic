@@ -1515,25 +1515,25 @@
 }
 
 .form-control::-moz-placeholder {
-  color: #ddd;
+  color: rgba(126, 111, 111, 0.849);
   opacity: 1;
   filter: alpha(opacity=100);
 }
 
 .form-control:-moz-placeholder {
-  color: #ddd;
+  color: rgba(126, 111, 111, 0.849);
   opacity: 1;
   filter: alpha(opacity=100);
 }
 
 .form-control::-webkit-input-placeholder {
-  color: #ddd;
+  color: rgba(126, 111, 111, 0.849);
   opacity: 1;
   filter: alpha(opacity=100);
 }
 
 .form-control:-ms-input-placeholder {
-  color: #ddd;
+  color: rgba(126, 111, 111, 0.849);
   opacity: 1;
   filter: alpha(opacity=100);
 }
@@ -1548,7 +1548,7 @@
   box-shadow: none;
   height: auto;
   background-color: rgba(0,0,0,0);
-  border: 1px solid #E3E3E3;
+  border: 1px solid rgba(178, 171, 171, 0.575);
   border-radius: 30px;
   color: #2c2c2c;
   line-height: normal;
@@ -1732,7 +1732,7 @@
 
 .input-group-addon {
   background-color: #fff;
-  border: 1px solid #E3E3E3;
+  border: 1px solid rgba(178, 171, 171, 0.575);
   border-radius: 30px;
   color: #555;
   padding: -.5rem 0 -.5rem -.3rem;
@@ -1863,7 +1863,7 @@ textarea.form-control:focus,textarea.form-control:active {
   border-radius: 3px;
   top: 0;
   background-color: transparent;
-  border: 1px solid #E3E3E3;
+  border: 1px solid rgba(182, 171, 171, 0.849);
   -webkit-transition: opacity 0.3s linear;
   -moz-transition: opacity 0.3s linear;
   -o-transition: opacity 0.3s linear;
@@ -1964,7 +1964,7 @@ textarea.form-control:focus,textarea.form-control:active {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  border: 1px solid #E3E3E3;
+  border: 1px solid rgba(163, 154, 154, 0.89);
   display: inline-block;
   position: absolute;
   left: 3px;
@@ -4776,7 +4776,7 @@ img {
 }
 
 [data-background-color] .checkbox label::before,[data-background-color] .checkbox label::after,[data-background-color] .radio label::before,[data-background-color] .radio label::after {
-  border-color: rgba(255,255,255,0.2);
+  border-color: rgba(179, 169, 169, 0.2);
 }
 
 [data-background-color] .checkbox label::after,[data-background-color] .checkbox label,[data-background-color] .radio label {
@@ -22347,6 +22347,9 @@ section.content {
   border-radius: 30px;
   -webkit-transition: background-color 0.3s;
   transition: background-color 0.3s;
+}
+img:hover , a:hover {
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1400px) {
